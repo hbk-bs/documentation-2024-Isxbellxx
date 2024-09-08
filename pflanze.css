@@ -1,0 +1,54 @@
+/* Grundlegendes Styling für die Seite */
+body {
+    background-color: rgb(236, 230, 221); /* Hintergrundfarbe der Seite */
+    margin: 0;
+    padding: 4em 1em; /* Padding für Inhalt */
+    font-family: 'Nimbus Mono PS', 'Courier New', monospace, sans-serif;
+    line-height: 1.5;
+    color: #555;
+    box-sizing: border-box; /* Verhindert Layout-Probleme durch Padding */
+  }
+
+/* Überschriften-Stil */
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+  
+  }
+  
+
+  header {
+    background-color: #f8f0e5;
+    background-image: url("header.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 1vw 2em;
+    text-align: center;
+  }
+
+/* Fußnote-Styling */
+.footer-note {
+    text-align: center;
+    background-color: #f8f0e5;
+    padding: 10px;
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 2rem;
+  }
+  .back-button {
+    display: inline-block;
+    padding: 3px 15px;
+    margin-top: 15px;
+    background-color: #675555;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+

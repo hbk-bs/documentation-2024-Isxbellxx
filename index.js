@@ -1,23 +1,28 @@
-document.addEventListener('DOMContentLoaded', () => {
-  let dark = false;
+document.addEventListener("DOMContentLoaded", () => {
+  let dark = false;  // Variable, um den Zustand zu speichern
+
   setInterval(() => {
-    document.body.style = dark
-      ? 'background-color:black'
-      : Math.random() > 0.4
-      ? 'background-color:#ff6347'
-      : 'background-color:white';
-    dark = !dark;
-    document.querySelector('h1').style = dark
-      ? Math.random() > 0.6
-        ? 'color: white'
-        : 'color: black'
-      : 'color: #ff6347';
-    document.title = dark
-      ? Math.random() > 0.5
-        ? 'Huh?'
-        : '🍅'
-      : Math.random() < 0.6
-      ? 'hihihihih!'
-      : 'HAH!';
+      document.body.style.backgroundColor = dark
+          ? "black"
+          : Math.random() > 0.4
+          ? "#ff6347"
+          : "white";
+
+      dark = !dark;
+
+      document.querySelector("h1").style.color = dark
+          ? Math.random() > 0.6
+          ? "white"
+          : "black"
+          : "#ff6347";
+
+      document.title = dark
+          ? Math.random() > 0.5
+          ? "huh?"
+          : ":)"
+          : Math.random() < 0.6
+          ? "hihihihoi"
+          : "hahahaha";
   }, 1000);
 });
+

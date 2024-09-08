@@ -1,14 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="de">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dokumentation</title>
+    <meta name="description" content="Dokumentation 2024" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .zentrierter-text {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-	<h1>make me your own!</h1>
-	<script src="index.js"></script>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <link rel="shortcut icon" href="smilie.ico" type="image/x-icon">
+
+    <!-- Banner mit Logo und Navigation -->
+    <header class="banner">
+        <div class="logo">
+            <img src="logo.isabella.website.1.png" alt="Logo">
+        </div>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#Projekte">Projekte</a>
+        </nav>
+    </header>
+
+    <!-- Foto unter dem Banner -->
+    <section class="hero-image">
+        <img src="efeutute.grau.png" alt="Efeutute">
+    </section>
+
+    <!-- Hauptinhalt der Seite -->
+    <section id="Projekte" class="content">
+        <h1>Dokumentation 2024</h1>
+        <p>Digitale Kommunikation</p>
+    </section>
+
+    <div class="row">
+        <figure class="squared-sixteen">
+            <a href="hund.html" target="_blank">
+                <img src="lückenfüller.website.png" alt="Hund">
+            </a>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="squared-sixteen">
+            <a href="pflanze.html" target="_blank">
+                <img src="lückenfüller.website.png" alt="Pflanze">
+            </a>
+            <figcaption></figcaption>
+        </figure>
+        <figure class="squared-sixteen">
+            <a href="wolf.html" target="_blank">
+                <img src="lückenfüller.website.png" alt="Wolf">
+            </a>
+            <figcaption></figcaption>
+        </figure>
+    </div>
+       <!-- Foto unter den Fotos-->
+       <section class="hero-image">
+        <img src="efeutute.grau.png" alt="Efeutute">
+    </section>
+
+    <!-- Abschnitt About -->
+    <section id="about" class="zentrierter-text">
+        <h2>About</h2>
+        <p>
+            Heyy,<br>
+            mein Name ist Isabella, und ich befinde mich derzeit im Studium<br>
+            der Visuellen Kommunikation an der Hochschule für Bildende<br>
+            Künste (HBK) in Braunschweig. Im Rahmen meines Studiums ist das<br>
+            Fach Digitale Kommunikation Teil der Grundlagen.<br>Auf dieser Webseite präsentiere ich die drei Projekte,<br>
+            die ich im zweiten Semester meines Studiums entwickelt habe.<br>
+            Viel Spaß :)
+        </p>
+    </section>
+
+    <div class="footer-note">
+        Isabella Schlüter Visuelle Kommunikation - Digitale Gestaltung Doz. Fabian Morón Zirfas
+    </div>
+    
 </body>
 </html>
+

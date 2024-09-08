@@ -1,17 +1,219 @@
-* {
-  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa,
-    Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri,
-    source-sans-pro, sans-serif;
-  font-weight: bold;
-}
+/* Hintergrundfarbe und zentrierte Inhalte */
 body {
+  background-color: rgb(236, 230, 221);
   margin: 0 auto;
-  width: 50vw;
-  height: 100vh;
+  font-family: 'Nimbus Mono PS', 'Courier New', monospace, sans-serif;
+  line-height: 1.5;
+  padding: 4em 1em;
+  color: #555;
+}
+
+/* Überschriften-Stil */
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+  text-align: center; /* Überschrift zentrieren */
+
+}
+
+/* Header mit Hintergrundbild */
+header {
+  background-color: #f8f0e5;
+  background-image: url("header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+/* Bilder auf volle Breite setzen */
+img {
+  width: 100%;
+}
+
+/* Link-Styling */
+a {
+  color: rgb(118, 39, 39);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Banner mit Logo links und Navigation rechts */
+.banner {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: rgb(69, 57, 57);
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo img {
+  height: 40px;
+}
+
+/* Navigation mit Links nebeneinander */
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  color: rgb(58, 43, 43);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.row,
+.column {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+ 
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.squared-sixteen {
+  flex: 16 16 0;
+  aspect-ratio: 1 / 1;
+}
+              .row figure a img {
+        transition: transform 0.2s ease-in-out;
+        }
+
+          .row figure a img:hover {
+          transform: scale(1.05); /* Vergrößerungseffekt beim Überfahren mit der Maus */
+            }
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.last-item {
+  margin-top: auto;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 80vw;
+  display: flex;
+
+  flex-direction: column;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding-bottom: 4rem;
 }
-h1 {
-  font-size: 5vw;
+
+/* Responsives Design für Mobilgeräte */
+@media (max-width: 768px) {
+  .banner {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .navigation {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .navigation a {
+      margin-left: 0;
+  }
 }
+
+
+        /* Grundlegendes Styling für die Seite */
+        body {
+            background-color: #f0f0f0; /* Hellgrauer Hintergrund */
+            margin: 0;
+            padding: 0;
+            font-family: 'Nimbus Mono PS', 'Courier New', 'monospace', sans-serif;
+        }
+
+        /* Banner mit Logo und Navigation */
+        header.banner {
+            background-color: #f8f0e5; /* Heller Beige für den Header */
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        /* Logo-Styling */
+        .logo img {
+            height: 40px; /* Höhe des Logos */
+        }
+
+        /* Navigation-Links */
+        .navigation a {
+            color: #333; /* Dunkle Farbe für die Navigationstexte */
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        /* Inhalt der Seite */
+        .content {
+            padding: 20px;
+            background-color: #fff; /* Weißer Hintergrund für den Hauptinhalt */
+            text-align: center; /* Zentriert den Titel */
+        }
+
+        /* Hero-Bild unter dem Banner */
+        .hero-image img {
+            width: 100%; /* Setzt das Bild auf volle Breite */
+            height: auto; /* Automatische Höhe, um das Bildverhältnis beizubehalten */
+            display: block;
+            margin: 0 auto; /* Zentriert das Bild horizontal */
+        }
+
+/* Fußnote-Styling */
+.footer-note {
+  text-align: center;
+  background-color: #f8f0e5;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 2rem;
+}
+
+
+    

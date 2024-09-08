@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hund</title>
+    <link rel="stylesheet" href="pflanze.css"> <!-- Optional, falls du eine externe CSS-Datei hast -->
+</head>
+<link rel="shortcut icon" href="smilie.ico" type="image/x-icon">
+<body>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <header>
+        <h1>Colins und Lilous Abendteuer</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Eine interaktive Geschichte</h2>
+            <p>Dieses Projekt befasst sich mit der Entwicklung eine interaktive Geschichte über die Hunde Colin,<br> einen Collie, und Lilou, einen Australian Shepherd.<br> Der Nutzer liest einen Abschnitt der Geschichte und trifft anschließend Entscheidungen <br>durch Auswahlmöglichkeiten. Diese Entscheidungen beeinflussen, wie die Geschichte weitergeht.<br>
+
+                Die Geschichte funktioniert wie ein Baumdiagramm: Jede Wahl des Nutzers führt zu unterschiedlichen<br> Handlungssträngen und neuen Auswahlmöglichkeiten. Sobald der Nutzer seine Entscheidung getroffen <br>und auf „Senden“ geklickt hat, verarbeitet das Modell Ollama diese Eingabe. Es generiert dann den<br> nächsten Teil der Geschichte sowie die folgenden Optionen, sodass die Geschichte dynamisch und <br>individuell angepasst wird.
+</p>
+<p>
+                
+    Colin und Lilou gehen, wenn ihre Besitzer nicht anwesend sind, auf aufregende Entdeckungstouren.<br> Diese Abenteuer führen sie häufig in die benachbarten Wälder und andere nahegelegene Gebiete, wo<br> sie die Umgebung erkunden und neue Erfahrungen sammeln. Nach insgesamt zehn Spielrunden, die eine <br>Reihe von Erlebnissen und Abenteuern umfassen, kehren die beiden Hunde in der Regel wieder nach <br>Hause zurück. In den meisten Fällen geschieht ihre Rückkehr so unauffällig, dass sie von ihren Besitzern <br>nicht bemerkt wird.</p>
+
+            
+            <h2>Über Ollama</h2>
+            <p>Ollama ist ein Large Language Model, das darauf spezialisiert ist, durch umfangreiches Training <br>mit Textdaten Sprache zu verstehen, zu verarbeiten und zu erzeugen. Es kann flexibel angepasst <br>werden, um in verschiedenen Bereichen Ergebnisse zu liefern. Allerdings ist die Anpassung oft <br>komplex und erfordert viel Experimentieren, da die Funktionsweise des Modells wie eine Blackbox ist.<br> Klare und präzise Anweisungen sind daher entscheidend, um das gewünschte Ergebnis zu erzielen <br>– ein Lernprozess.</p>
+             
+            <h2>des weiteren</h2>
+            <p>Eine zentrale Herausforderung dieser Seite liegt im fehlenden Design. Der aktuelle Zustand <br> beschränkt sich auf schwarzen Text auf weißem Hintergrund sowie ein einfaches Textfeld mit<br> einem Button. Der Fokus des Projekts lag bislang primär auf der Funktionalität, mit nur geringem <br>Augenmerk auf das Design. Dennoch stellt das Fehlen eines ansprechenden Designs eine <br> bedeutende Schwachstelle dar, die in zukünftigen Entwicklungsphasen behoben werden muss.</p>
+            <p>Ein weiteres Manko besteht darin, dass es derzeit keine visuelle Rückmeldung gibt, wenn die <br>Seite lädt, insbesondere während Ollama den nächsten Teil der Geschichte generiert. Der Mangel<br> an einer solchen Ladeanzeige kann zu Verwirrung führen, da Nutzer möglicherweise annehmen, <br>die Seite sei eingefroren oder funktioniere nicht mehr, obwohl Ollama lediglich etwas Zeit zur <br>Verarbeitung benötigt.</p>
+            <p>Darüber hinaus wurde ein weiteres Problem noch nicht behoben: Das Ende der Geschichte kann<br>manchmal abrupt und unpassend erscheinen, was den Lesefluss erheblich beeinträchtigt. Dieses <br>Problem stellt eine wesentliche Einschränkung der Benutzererfahrung dar und solle<br> bearbeitet werden.</p>
+
+            <h2>Zukunftsideen</h2>
+                <p>Der Ursprung und die treibende Motivation für dieses Projekt lagen in der Konzeption einer<br> interaktiven Gute-Nacht-Geschichte. Die grundlegende Idee bestand darin, eine narrativ <br>ansprechende Erfahrung zu schaffen, bei der zwei bekannte Charaktere jeden Abend neue <br>Abenteuer erleben und somit den Einschlafprozess der Kinder begleiten. Um das Erlebnis weiter <br>zu bereichern, wäre es wünschenswert, dass zusätzlich zum Text auch passende Bilder generiert<br> werden. Diese visuellen Elemente könnten den Kindern als visuelle Anhaltspunkte dienen und das <br>Erzählte greifbarer machen, wodurch ein individuell gestaltetes Bilderbuch entsteht.</p>
+                <p>Für eine erhöhte Individualisierung könnte das System den Nutzern ermöglichen, die Charaktere <br>zu Beginn der Geschichte anzupassen. Eine besonders ansprechende Möglichkeit wäre es, die<br> Hauptfiguren durch die eigenen Haustiere oder andere vertraute Figuren der Kinder zu ersetzen. <br>Dies würde nicht nur die emotionale Bindung verstärken, sondern auch das Gesamterlebnis <br>personalisieren und somit für jedes Kind einzigartig gestalten.</p>
+          
+        </section>
+        <a href="index.html" class="back-button">Zurück</a>
+        <div class="footer-note">
+            Isabella Schlüter Visuelle Kommunikation - Digitale Gestaltung Doz. Fabian Morón Zirfas
+        </div>
+        
+    </main>
+</body>
+</html>

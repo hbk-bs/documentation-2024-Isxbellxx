@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wolf</title>
+    <link rel="stylesheet" href="pflanze.css"> 
+</head>
+<link rel="shortcut icon" href="smilie.ico" type="image/x-icon">
+<body>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <header>
+        <h1>Aschenbecher</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Über Aschenbecher</h2>
+            <p>Das Projekt „Wolfsverwandlung“ beschäftigt sich mit der Anwendung von Künstlicher Intelligenz zur Bildgeneration im Kontext einer erzählerischen Fantasy-Geschichte. Die grundlegende Idee des Projekts war es, die Exkursion im Rahmen der Grundlagen des Studiengangs Visuelle Kommunikation (VK) in eine fantasievolle Erzählung umzuwandeln. Die Erzählung basiert auf einer Exkursion nach Leipzig und integriert als zentrale Protagonisten verschiedene Teilnehmer eines Kurses. Im Zentrum der Geschichte steht eine Figur namens Phil, die kurz vor der Verwandlung in einen Werwolf steht. Gemeinsam mit Anna und einem Ritual versucht Phil, den Fluch zu brechen und die Exkursion in entspannter Atmosphäre zu genießen. Die grundlegende Idee des Projekts war es, die Exkursion im Rahmen der Grundlagen des Studiengangs Visuelle Kommunikation (VK) in eine fantasievolle Erzählung umzuwandeln.
+
+                Die Geschichte wurde mithilfe von ChatGPT entwickelt, einem KI-Modell, das auf der Verarbeitung natürlicher Sprache basiert. Auf Grundlage der von ChatGPT verfassten Geschichte wurden zehn zentrale Szenen identifiziert, die visuell umgesetzt werden sollten. Für die bildliche Darstellung der Szenen kam zunächst Adobe Firefly zum Einsatz. Firefly ist ein KI-gestütztes Tool zur Bildgenerierung, das durch die Eingabe von textuellen Beschreibungen Bilder erstellt.
+                
+                Die Auswahl des geeigneten Tools zur KI-gestützten Bildgenerierung stellte sich als komplexe Entscheidung heraus. Die Wahl fiel letztlich auf Firefly, doch die Ergebnisse waren in der Praxis teilweise uneinheitlich. Die Generierung der Bilder verlief oft unvorhersehbar: Während in einigen Fällen das gewünschte Ergebnis schnell erzielt wurde, entsprach es in anderen Fällen nicht den Erwartungen. Besonders herausfordernd war es, dass detaillierte Beschreibungen nicht immer vollständig berücksichtigt wurden, was zu unerwarteten und teils unbrauchbaren Resultaten führte.
+                
+                Ein Vorteil von Firefly war, dass es möglich war, bereits generierte Bilder nachträglich zu bearbeiten, um sie näher an die ursprüngliche Vorstellung anzupassen. Dennoch stellte die Konsistenz der Darstellung der Charaktere eine erhebliche Herausforderung dar. Trotz einheitlicher Beschreibungen variierten die Ergebnisse häufig, was die fortlaufende Erkennbarkeit der Charaktere erschwerte.
+                
+                Zusammenfassend zeigt das Projekt „Wolfsverwandlung“ die Herausforderungen und Möglichkeiten der KI-gestützten Bildgenerierung in einem kreativen Kontext. Es verdeutlicht sowohl die Stärken als auch die Schwächen aktueller KI-Technologien im Bereich der visuellen Kunst und bietet wertvolle Erkenntnisse für die weitere Entwicklung und Anwendung solcher Technologien in der visuellen Kommunikation.</p>
+            <img src="aschenbecher.jpg" alt="Aschenbecher">
+        </section>
+        <a href="index.html" class="back-button">Zurück</a>
+  </main>
+    <div class="footer-note">
+        Isabella Schlüter Visuelle Kommunikation - Digitale Gestaltung Doz. Fabian Morón Zirfas
+    </div>
+</body>
+</html>
