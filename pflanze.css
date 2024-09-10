@@ -2,22 +2,24 @@
 body {
     background-color: rgb(236, 230, 221); /* Hintergrundfarbe der Seite */
     margin: 0;
-    padding: 4em 1em; /* Padding für Inhalt */
     font-family: 'Nimbus Mono PS', 'Courier New', monospace, sans-serif;
     line-height: 1.5;
     color: #555;
     box-sizing: border-box; /* Verhindert Layout-Probleme durch Padding */
-  }
+}
 
-/* Überschriften-Stil */
-h2 {
-    margin-top: 1em;
-    padding-top: 1em;
-  
-  }
-  
+/* Hauptinhalt einrücken */
+main {
+    padding: 4em 5em; 
+}
+p {
+    max-width: 60ch; /* Begrenze die Textbreite auf ca. 60 Zeichen pro Zeile */
+    line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+    margin-bottom: 1.5em; /* Abstand zwischen Absätzen */
+    word-wrap: break-word; /* Langes Wortumbruch, wenn nötig */
+}
 
-  header {
+header {
     background-color: #f8f0e5;
     background-image: url("header.jpg");
     background-position: center top;
@@ -26,9 +28,15 @@ h2 {
     line-height: 1.2;
     padding: 1vw 2em;
     text-align: center;
-  }
+}
 
-/* Fußnote-Styling */
+
+h2 {
+    margin-top: 1em;
+    padding-top: 1em;
+}
+
+
 .footer-note {
     text-align: center;
     background-color: #f8f0e5;
@@ -36,8 +44,9 @@ h2 {
     font-size: 0.8rem;
     color: #555;
     margin-top: 2rem;
-  }
-  .back-button {
+}
+
+.back-button {
     display: inline-block;
     padding: 3px 15px;
     margin-top: 15px;
@@ -51,4 +60,3 @@ h2 {
 .back-button:hover {
     background-color: #333;
 }
-

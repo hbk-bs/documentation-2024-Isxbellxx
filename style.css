@@ -7,6 +7,14 @@ body {
   padding: 4em 1em;
   color: #555;
 }
+p {
+  max-width: 60ch; /* Begrenze die Textbreite auf ca. 60 Zeichen pro Zeile */
+  line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+  text-align: left; /* Links ausgerichtet */
+  margin-bottom: 1.5em; /* Abstand zwischen Absätzen */
+  word-wrap: break-word; /* Langes Wortumbruch, wenn nötig */
+}
+
 
 /* Überschriften-Stil */
 h2 {
@@ -14,6 +22,10 @@ h2 {
   padding-top: 1em;
   text-align: center; /* Überschrift zentrieren */
 
+}
+.container {
+  width: 100%; /* Nimmt die gesamte Breite des Bildschirms */
+  max-width: 800px; /* Begrenze die maximale Breite */
 }
 
 /* Header mit Hintergrundbild */
