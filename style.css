@@ -58,7 +58,6 @@ a:hover {
 .logo img {
   height: 40px;
 }
-
 .navigation {
   display: flex;
   gap: 20px;
@@ -76,11 +75,6 @@ a:hover {
 img {
   max-width: 100%;
   height: auto;
-}
-@media (max-width: 768px) {
-  .squared-sixteen {
-    flex: 1 1 100%; /* Ein Bild pro Zeile bei kleinen Bildschirmen */
-  }
 }
 
 figcaption {
@@ -101,10 +95,6 @@ figcaption {
   flex-direction: row;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-}
 
 .squared-sixteen {
   flex: 16 16 0;
@@ -150,24 +140,6 @@ footer {
   align-items: center;
   margin: 0 auto;
   padding-bottom: 4rem;
-}
-
-/* Responsives Design für Mobilgeräte */
-@media (max-width: 768px) {
-  .banner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navigation {
-    margin-top: 10px;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .navigation a {
-    margin-left: 0;
-  }
 }
 
 /* Banner mit Logo und Navigation */
@@ -223,4 +195,71 @@ h1, h2 {
   font-size: 0.8rem;
   color: #555;
   margin-top: 2rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .squared-sixteen {
+    flex: 1 1 100%; /* Ein Bild pro Zeile bei kleinen Bildschirmen */
+  }
+}
+
+/* Responsives Design für Mobilgeräte */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigation a {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90vw;
+  }
+  .locations-container {
+    flex-direction: column;
+  }
+  .facts {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .column{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+ 
+  figure {
+    width: 100%;
+    align-items: center;
+  }
+ 
+  img {
+    width: 100%;
+  }
+
+  h1{
+    font-size: 3rem;
+  }
+
+  .impressum-bar{
+    padding: 1px 0;
+    font-size: 0.5rem;
+  }
 }
