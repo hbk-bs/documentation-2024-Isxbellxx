@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hund</title>
+    <title>Geschichte</title>
     <link rel="stylesheet" href="pflanze.css"> <!-- Optional, falls du eine externe CSS-Datei hast -->
 </head>
 <link rel="shortcut icon" href="smilie.ico" type="image/x-icon">
@@ -22,74 +22,46 @@
         <h1>Colins und Lilous Abendteuer</h1>
     </header>
 
+    <section class="hero-image">
+        <img src="colin.lilou 1.png" alt="Efeutute">
+    </section>
+
     <main>
         <section>
             <h2>Eine interaktive Geschichte</h2>
 
-            <p>Dieses Projekt befasst sich mit der Entwicklung einer interaktiven Geschichte über die Hunde Colin,
-            einen Collie, und Lilou, einen Australian Shepherd. Der Nutzer liest einen Abschnitt der Geschichte
-            und trifft anschließend Entscheidungen durch Auswahlmöglichkeiten. Diese Entscheidungen beeinflussen,
-            wie die Geschichte weitergeht. Die Geschichte funktioniert wie ein Baumdiagramm: Jede Wahl des Nutzers
-            führt zu unterschiedlichen Handlungssträngen und neuen Auswahlmöglichkeiten. Sobald der Nutzer seine
-            Entscheidung getroffen und auf „Senden“ geklickt hat, verarbeitet das Modell Ollama diese Eingabe.
-            Es generiert dann den nächsten Teil der Geschichte sowie die folgenden Optionen, sodass die Geschichte
-            dynamisch und individuell angepasst wird.</p>
+            <p>Das Projekt befasst sich mit der Entwicklung einer interaktiven Erzählung über die Hunde Colin, einen Collie, und Lilou, einen Australian Shepherd. Der Leser verfolgt zunächst einen Abschnitt der Geschichte und trifft anschließend eine Entscheidung, die den weiteren Verlauf beeinflusst. Die Struktur der Geschichte ähnelt einem Baumdiagramm, bei dem jede Entscheidung neue Handlungsmöglichkeiten eröffnet. Sobald eine Wahl getroffen und bestätigt wurde, verarbeitet ein Modell namens Ollama diese Eingabe und generiert den nächsten Abschnitt sowie die neuen Auswahlmöglichkeiten, wodurch die Erzählung an den Nutzer angepasst wird.</p>
             
-            <p>Colin und Lilou gehen, wenn ihre Besitzer nicht anwesend sind, auf aufregende Entdeckungstouren.
-            Diese Abenteuer führen sie häufig in die benachbarten Wälder und andere nahegelegene Gebiete, wo
-            Reihe von Erlebnissen und Abenteuern umfassen, kehren die beiden Hunde in der Regel wieder nach
-            Hause zurück. In den meisten Fällen geschieht ihre Rückkehr so unauffällig, dass sie von ihren
-            Besitzern nicht bemerkt wird.</p>
+            <p>Colin und Lilou erleben aufregende Abenteuer, wenn ihre Besitzer nicht zu Hause sind. Diese Abenteuer führen die beiden oft in die nahegelegenen Wälder oder in andere spannende Gebiete. Obwohl ihre Erkundungstouren ereignisreich sind, kehren die Hunde am Ende meist unauffällig nach Hause zurück, ohne dass ihre Besitzer etwas von den Ausflügen bemerken.</p>
             
             <h2>Über Ollama</h2>
-            
-            <p>Ollama ist ein Large Language Model, das darauf spezialisiert ist, durch umfangreiches Training
-            mit Textdaten Sprache zu verstehen, zu verarbeiten und zu erzeugen. Es kann flexibel angepasst
-            werden, um in verschiedenen Bereichen Ergebnisse zu liefern. Allerdings ist die Anpassung oft
-            komplex und erfordert viel Experimentieren, da die Funktionsweise des Modells wie eine Blackbox ist.
-            Klare und präzise Anweisungen sind daher entscheidend, um das gewünschte Ergebnis zu erzielen
-            – ein Lernprozess.</p>
+            <p>Ollama ist ein umfangreich trainiertes Sprachmodell, das darauf spezialisiert ist, menschliche Sprache zu verstehen, zu verarbeiten und darauf zu reagieren. Es kann flexibel in verschiedenen Bereichen eingesetzt werden, wobei die Anpassung häufig anspruchsvoll ist und viel Experimentieren erfordert, da das Modell wie eine "Blackbox" arbeitet. Es ist daher entscheidend, präzise Anweisungen zu formulieren, um die gewünschten Ergebnisse zu erzielen – ein Prozess, der ständiges Lernen erfordert.</p>
             
             <h2>Probleme</h2>
             
-            <p>Eine zentrale Herausforderung dieser Seite liegt im fehlenden Design. Der aktuelle Zustand
-            beschränkt sich auf schwarzen Text auf weißem Hintergrund sowie ein einfaches Textfeld mit
-            einem Button. Der Fokus des Projekts lag bislang primär auf der Funktionalität, mit nur geringem
-            Augenmerk auf das Design. Dennoch stellt das Fehlen eines ansprechenden Designs eine
-            bedeutende Schwachstelle dar, die in zukünftigen Entwicklungsphasen behoben werden muss.</p>
+            <p>Ein zentrales Problem des Projekts liegt im fehlenden Design. Der aktuelle Aufbau beschränkt sich auf schwarzen Text auf weißem Hintergrund, ein einfaches Textfeld und einen Button. Bisher lag der Schwerpunkt vor allem auf der Funktionalität, während das Design vernachlässigt wurde. Dies stellt eine Schwäche dar, die in zukünftigen Phasen der Entwicklung behoben werden sollte.</p>
             
-            <p>Ein weiteres Manko besteht darin, dass es derzeit keine visuelle Rückmeldung gibt, wenn die
-            Seite lädt, insbesondere während Ollama den nächsten Teil der Geschichte generiert. Der Mangel
-            an einer solchen Ladeanzeige kann zu Verwirrung führen, da Nutzer möglicherweise annehmen,
-            die Seite sei eingefroren oder funktioniere nicht mehr, obwohl Ollama lediglich etwas Zeit zur
-            Verarbeitung benötigt.</p>
+            <p>Ein weiteres Problem ist das Fehlen einer visuellen Rückmeldung, während die Seite lädt und Ollama den nächsten Abschnitt generiert. Ohne eine Ladeanzeige besteht die Gefahr, dass Nutzer annehmen, die Seite sei eingefroren oder funktioniere nicht, obwohl das Modell lediglich noch arbeitet.</p>
             
-            <p>Darüber hinaus wurde ein weiteres Problem noch nicht behoben: Das Ende der Geschichte kann
-            manchmal abrupt und unpassend erscheinen, was den Lesefluss erheblich beeinträchtigt. Dieses
-            Problem stellt eine wesentliche Einschränkung der Benutzererfahrung dar und sollte bearbeitet werden.</p>
+            <p>Ein zusätzliches Problem betrifft das Ende der Geschichte, das manchmal abrupt und unpassend wirkt. Dies beeinträchtigt das Leseerlebnis und sollte dringend verbessert werden, um die Benutzererfahrung zu optimieren.</p>
+            
+            <h2>Erkenntnisse</h2>
+            <p>Eine der größten Herausforderungen war es, zu Beginn eine klare und einfache Idee zu formulieren. Häufig wurde der Fokus auf die Hauptidee verloren, da bereits zu früh über mögliche Erweiterungen und zusätzliche Elemente nachgedacht wurde. Dies führte dazu, dass das grundlegende Konzept verwässert wurde und der Blick auf das Wesentliche verloren ging. Aus dieser Erfahrung lässt sich ableiten, dass es sinnvoll ist, zunächst mit einer einfachen und klaren Idee zu beginnen und komplexere Elemente erst später hinzuzufügen, wenn die Basis gefestigt ist.</p>
            
             <h2>Zukunftsideen</h2>
             
-            <p>Der Ursprung und die treibende Motivation für dieses Projekt lagen in der Konzeption einer
-            interaktiven Gute-Nacht-Geschichte. Die grundlegende Idee bestand darin, eine narrativ
-            ansprechende Erfahrung zu schaffen, bei der zwei bekannte Charaktere jeden Abend neue
-            Abenteuer erleben und somit den Einschlafprozess der Kinder begleiten. Um das Erlebnis weiter
-            zu bereichern, wäre es wünschenswert, dass zusätzlich zum Text auch passende Bilder generiert
-            werden. Diese visuellen Elemente könnten den Kindern als visuelle Anhaltspunkte dienen und das
-            Erzählte greifbarer machen, wodurch ein individuell gestaltetes Bilderbuch entsteht.</p>
-            
-            <p>Für eine erhöhte Individualisierung könnte das System den Nutzern ermöglichen, die Charaktere
-            zu Beginn der Geschichte anzupassen. Eine besonders ansprechende Möglichkeit wäre es, die
-            Hauptfiguren durch die eigenen Haustiere oder andere vertraute Figuren der Kinder zu ersetzen.
-            Dies würde nicht nur die emotionale Bindung verstärken, sondern auch das Gesamterlebnis
-            personalisieren und somit für jedes Kind einzigartig gestalten.</p>
+            <p>Die ursprüngliche Motivation für das Projekt war die Entwicklung einer interaktiven Gute-Nacht-Geschichte. Ziel war es, eine ansprechende Erzählung zu schaffen, bei der zwei bekannte Charaktere jeden Abend neue Abenteuer erleben und den Einschlafprozess von Kindern begleiten. Eine mögliche Erweiterung bestünde darin, zusätzlich zum Text passende Bilder zu integrieren, die den Kindern visuelle Unterstützung bieten und die Geschichte noch greifbarer machen. Dies könnte zu einer personalisierten und interaktiven Bilderbuch-Erfahrung führen.</p>
+
+            <p>Ein weiterer Schritt in Richtung Individualisierung könnte darin bestehen, den Nutzern die Möglichkeit zu geben, die Charaktere am Anfang der Geschichte selbst anzupassen. Eine interessante Option wäre es, die Hauptfiguren durch eigene Haustiere oder andere vertraute Figuren zu ersetzen. Dies würde nicht nur die emotionale Bindung der Kinder stärken, sondern auch ein einzigartiges, personalisiertes Erlebnis schaffen.</p>
+
+            <a href="https://colin-und-lilou-abendteuer.netlify.app/">zur Website</a>
               
         </section>
         <a href="index.html" class="back-button">Zurück</a>
-        <div class="footer-note">
+       
+        
+    </main> <div class="footer-note">
             Isabella Schlüter Visuelle Kommunikation - Digitale Gestaltung bei Fabian Morón Zirfas
         </div>
-        
-    </main>
 </body>
 </html>

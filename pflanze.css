@@ -17,6 +17,7 @@ p {
     line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
     margin-bottom: 1.5em; /* Abstand zwischen Absätzen */
     word-wrap: break-word; /* Langes Wortumbruch, wenn nötig */
+    
 }
 
 header {
@@ -60,3 +61,7 @@ h2 {
 .back-button:hover {
     background-color: #333;
 }
+img {
+    width: 100%;
+    height: auto;
+  }

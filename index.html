@@ -8,8 +8,28 @@
     <meta name="description" content="Dokumentation 2024" />
     <link rel="stylesheet" href="style.css">
     <style>
-        .zentrierter-text {
-            text-align: center;
+        /* Zentriere den Textblock, aber behalte die Linksbündigkeit */
+        .zentrierter-text-block {
+            max-width: 60ch; /* Begrenze die maximale Breite des Textblocks */
+            margin-left: auto; /* Zentriert den Textblock horizontal */
+            margin-right: auto; /* Zentriert den Textblock horizontal */
+            text-align: left; /* Text bleibt linksbündig */
+        }
+
+        /* Links ausgerichteter about-Bereich */
+        #about {
+            max-width: 60ch;
+            margin-left: 0; /* Ausrichtung an den linken Rand */
+            margin-right: auto;
+            text-align: left;
+            padding-left: 20px; /* Optionaler Abstand vom Rand */
+        }
+
+        /* Links ausgerichtete Fußnote */
+        .footer-note {
+            text-align: left;
+            padding-left: 20px; /* Abstand zum linken Rand */
+            margin-left: 0;
         }
     </style>
 </head>
@@ -32,7 +52,6 @@
             <img src="logo.isabella.website.1.png" alt="Logo">
         </div>
         <nav class="navigation">
-            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#Projekte">Projekte</a>
         </nav>
@@ -45,8 +64,9 @@
 
     <!-- Hauptinhalt der Seite -->
     <section id="Projekte" class="content">
-        <h1>Dokumentation 2024</h1>
-        <p>Digitale Kommunikation</p>
+        <h1>Dokumentation 2024 -
+            Digitale Kommunikation
+        </h1>
     </section>
 
     <div class="row">
@@ -69,14 +89,15 @@
             <figcaption></figcaption>
         </figure>
     </div>
-       <!-- Foto unter den Fotos-->
-       <section class="hero-image">
+
+    <!-- Foto unter den Fotos -->
+    <section class="hero-image">
         <img src="efeutute.grau.png" alt="Efeutute">
     </section>
 
     <!-- Abschnitt About -->
     <section id="about" class="container">
-        <h2>About</h2>
+        <h2>Was ist das hier?</h2>
         <p>
             Heyy,
             mein Name ist Isabella, und ich befinde mich derzeit im Studium
@@ -94,4 +115,3 @@
 
 </body>
 </html>
-
