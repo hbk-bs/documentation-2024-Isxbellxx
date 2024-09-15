@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efeutute</title>
+    <link rel="stylesheet" href="pflanze.css"> <!-- Optional, falls du eine externe CSS-Datei hast -->
+</head>
+<link rel="shortcut icon" href="smilie.ico" type="image/x-icon">
+ 
+<body>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+   <header>
+        <h1>Was hat meine Efeutute?</h1>
+    </header>
+
+
+    <section class="hero-image">
+        <img src="dietute.png" alt="Efeutute">
+    </section>
+
+    <main>
+        <section>
+            <h2>Die Pflanzenhilfe</h2>
+            <p>
+             Die Efeutute (Epipremnum aureum) ist eine weit verbreitete Zimmerpflanze, die aufgrund ihrer unkomplizierten Pflege und ihrer schnellen Rankenbildung besonders bei Anfängern beliebt ist. Dennoch kann es gelegentlich zu Problemen wie der Verfärbung einzelner Blätter kommen,was Fragen zur Pflanzenpflege aufwirft.
+           </p>
+           <p>  Das Projekt „Was hat meine Efeutute?“ wurde speziell für Anfänger entwickelt, um bei der Diagnose von Problemen mit der Pflanze zu unterstützen. Nutzer haben die Möglichkeit, ein Foto des betroffenen Blattes über die Website hochzuladen. Die Plattform vergleicht das hochgeladene Bild mit einer umfangreichen Datenbank von Blättern, um die höchste Übereinstimmung zu ermitteln. Basierend auf diesem Vergleich wird der Nutzer auf die Seite des Blattes weitergeleitet, das die größte Ähnlichkeit aufweist.</p>
+           
+             <p>Auf dieser Zielseite erhält der Nutzer detaillierte Informationen darüber, was möglicherweise mit der Pflanze nicht stimmt, und es werden Lösungsvorschläge zur Behebung des identifizierten Problems bereitgestellt. Die Website dient somit als interaktives Werkzeug zur Diagnose und Problemlösung, das insbesondere Anfängern dabei hilft, die Gesundheit ihrer Efeutute zu erhalten und zu verbessern.</p>
+            
+
+            <h2>Teachable Machine</h2>
+               <p>
+                Die Untersuchung der Blätter erfolgt durch den Einsatz von Googles Teachable Machine, einem Werkzeug, das es ermöglicht, KI-Modelle mit eigenen Daten zu trainieren, ohne dass tiefgehende Kenntnisse in Programmierung oder Datenanalyse erforderlich sind. Dieses Tool erlaubt es, Modelle auf Basis von Bild-, Audio- oder Bewegungsdaten zu entwickeln. Für das vorliegende Projekt konzentriert sich die Anwendung auf die Verarbeitung und Analyse von Bilddaten.
+               </p>
+               <p>
+                In diesem Projekt werden verschiedene Klassen definiert, um das Modell zu trainieren. Die verwendeten Klassen umfassen „gelb“, „braun“, „schwarze Flecken“ und „Risse“. Diese Klassen repräsentieren die unterschiedlichen Arten von Blattveränderungen, die erkannt werden sollen. Der Trainingsprozess erfolgt im Hintergrund der Plattform und erfordert keine manuellen Eingriffe der Nutzer.
+                </p>
+                <p>
+                    Nach Abschluss des Trainings kann das Modell auf neue Daten angewendet werden, um dessen Leistung zu überprüfen. Die Ergebnisse der Analyse werden in Form von Prozentwerten dargestellt, die angeben, wie hoch der Übereinstimmungsgrad der neuen Daten mit den definierten Klassen ist. Dies erlaubt eine messbare Bewertung, wie genau und effektiv das Modell bei der Einordnung der Blattzustände ist.
+                </p>
+
+            <h2>Probleme</h2>
+            <p>Die Website hat schon einige gute Design-Elemente. Es gibt jedoch noch Raum für Verbesserungen, um die Nutzererfahrung zu verbessern. Besonders wichtig wäre die Einführung einer Ladeanzeige. Ohne diese könnte es den Anschein haben, dass die Seite nicht funktioniert oder eingefroren ist.</p>
+
+            <p>Das Modell liefert in einigen Fällen ungenaue oder fehlerhafte Ergebnisse. Dies deutet darauf hin, dass die Datenbank mit Bildern von Blättern vergrößert werden muss, um die Klassifikationen präziser zu machen. Es ist jedoch schwierig, das notwendige Fotomaterial zu beschaffen, was die Weiterentwicklung des Projekts erschwert. Eine größere und vielfältigere Datenbank wäre jedoch entscheidend, um die Genauigkeit und Zuverlässigkeit des Modells zu verbessern.</p>
+
+            <h2>Erkenntnisse</h2>
+            <p> Es wurde deutlich, dass für präzise Ergebnisse mehr Bildmaterial benötigt wird, als ursprünglich angenommen. Eine umfangreichere Bilddatenbasis ist notwendig, um die Diagnosetools zuverlässig zu gestalten und effektive Ergebnisse bei der Pflanzenpflege sicherzustellen.</p>
+            
+            <p>Zusätzlich wurden wesentliche Erkenntnisse zum Verhalten der Efeutute (Epipremnum aureum) und den verschiedenen Ursachen von Blattverfärbungen gewonnen. Es wurde festgestellt, dass ähnliche Blattverfärbungen unterschiedliche Ursachen haben können, was eine präzise Diagnose erfordert.</p>
+
+            <h2>Zukunftsideen</h2>
+            <p>Eine sinnvolle Weiterentwicklung des Projekts könnte die Integration einer Funktion sein, die es Nutzern ermöglicht, auf mobilen Geräten direkt die Kamera zu verwenden, anstatt eine bereits gespeicherte Datei hochzuladen. Diese Funktion würde die Benutzerfreundlichkeit erheblich verbessern, indem sie den Prozess vereinfacht, ein Foto des betroffenen Blattes aufzunehmen und es unmittelbar zur Analyse hochzuladen. Für die Nutzung auf Computern wäre es jedoch weiterhin wichtig, die Möglichkeit zum Hochladen von Bilddateien beizubehalten, um den unterschiedlichen Anforderungen der Nutzer gerecht zu werden.</p>
+
+            <p>Darüber hinaus wäre es ratsam, die Analysekapazitäten des Tools durch die Integration weiterer Krankheiten und Schädlinge zu erweitern, die die Efeutute befallen können. Eine solche Erweiterung würde die diagnostische Präzision des Modells deutlich erhöhen und somit einen höheren praktischen Nutzen bieten.</p>
+
+            <p>Langfristig könnte das Projekt zusätzlich auf die Identifikation und Analyse anderer Pflanzenarten ausgeweitet werden. Allerdings stellt die Verfügbarkeit von ausreichend qualitativ hochwertigem Bildmaterial eine signifikante Herausforderung dar. Bereits bei der Efeutute, einer weit verbreiteten und beliebten Pflanze, zeigte sich, dass nicht immer genügend geeignetes Bildmaterial vorhanden war. Diese Problematik könnte bei weniger populären Pflanzenarten noch ausgeprägter sein. Nichtsdestotrotz könnte eine Erweiterung der Datenbank und der unterstützten Pflanzenarten die Anwendbarkeit und den Wert des Tools erheblich steigern, wenngleich dies mit einem erhöhten Aufwand in der Datenakquise verbunden wäre</p>
+            <a href="https://efeutute.netlify.app">zur Website</a>
+
+        </section>
+
+        <a href="index.html" class="back-button">Zurück</a>
+    </main>
+
+    <div class="footer-note">
+        Isabella Schlüter Visuelle Kommunikation - Digitale Kommunikation bei Fabian Morón Zirfas
+    </div>
+</body>
+</html>

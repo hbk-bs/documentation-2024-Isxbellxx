@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Werwolf</title>
+    <link rel="stylesheet" href="pflanze.css"> 
+</head>
+<link rel="shortcut icon" href="smilie.ico" type="image/x-icon">
+<body>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <header>
+        <h1>KI-Bildgenerierung</h1>
+    </header>
+
+    <section class="hero-image">
+        <img src="sitzen.png" alt="sitzen">
+    </section>
+
+    <main>
+        <section>
+            <h2>„Vom Wolf zum Mann:
+                Eine Reise zur Erlösung"</h2>
+            <p>Das Projekt beschäftigt sich mit der Anwendung von Künstlicher Intelligenz 
+            zur Bildgenerierung in einer Fantasy-Geschichte. Ziel war es, die Exkursion des Grundlagenkurses der Visuellen
+            Kommunikation nach Leipzig in eine fantasievolle Erzählung umzuwandeln. Die Geschichte 
+            integriert verschiedene Teilnehmer des Kurses. Im Mittelpunkt steht Phil, der kurz vor der 
+            Verwandlung in einen Werwolf steht. Gemeinsam mit Anna und einem Ritual versucht Phil,
+            den Fluch zu brechen.</p>
+            
+            <h2>ChatGPT</h2>
+            <p>Die Geschichte wurde mithilfe von ChatGPT entwickelt, einem KI-Modell für natürliche Sprachverarbeitung.
+             Auf Grundlage der Geschichte wurden zehn zentrale Szenen ausgewählt, die für die visuelle Umsetzung vorgesehen waren.</p>
+            
+            <h2>Adobe Firefly</h2>
+            <p>Die Bildgenerierung wurde zunächst mit Adobe Firefly durchgeführt. Firefly ist ein KI-Tool,
+            das durch textuelle Beschreibungen Bilder erstellt.
+            Die Auswahl des richtigen Tools erwies sich als komplex. In einigen Fällen wurden
+            die gewünschten Ergebnisse schnell erzielt, während andere Resultate unerwartet
+            und unbrauchbar waren. Ein Vorteil von Firefly war die Möglichkeit, bereits
+            generierte Bilder nachträglich zu bearbeiten, um sie näher an die ursprüngliche
+            Vorstellung anzupassen. Dennoch stellte die konsistente Darstellung der Charaktere
+            eine erhebliche Herausforderung dar. Trotz der sichtbaren Probleme entsprachen
+            die Ergebnisse größtenteils unseren Erwartungen und fügten sich gut in das ursprüngliche
+            Konzept ein. Einige der generierten Bilder führten zu neuen, kreativen Ansätzen,
+            die den Prozess bereicherten.</p>
+
+            <h2>Andererseits</h2>
+            <p>Es hat sich gezeigt, dass die KI beim Einfügen von Witzen in Geschichten noch Schwächen hat. Die Witze wirkten oft unpassend und zufällig, sodass sie keinen Sinn ergaben. In vielen Fällen mussten sie daher wieder entfernt werden, um die Geschichte nicht zu beeinträchtigen.</p>
+
+             <p>Auch bei der Bildgenerierung gab es Schwierigkeiten, besonders bei der Darstellung von Menschen und Tieren. Häufig waren Körperteile unnatürlich geformt oder fehlten ganz. Diese Mängel zeigen, dass die KI noch Probleme mit komplexen Figuren hat.</p>   
+                
+               <p>Andererseits funktionierte die Erstellung von Landschaften und Gebäuden deutlich besser. Hierbei gab es weniger Fehler, auch wenn bei genauerem Hinsehen kleine Unstimmigkeiten erkennbar waren. Solange man auf die Details nicht zu sehr achtet, liefern die generierten Bilder in diesen Bereichen insgesamt zufriedenstellende Ergebnisse.</p>
+               <a href="https://generated-ai-story.netlify.app">zur Website</a>
+            
+
+    </section>
+       
+    <a href="index.html" class="back-button">Zurück</a>
+    </main>
+    <div class="footer-note">
+        Isabella Schlüter Visuelle Kommunikation - Digitale Kommunikation bei Fabian Morón Zirfas
+    </div>
+</body>
+</html>

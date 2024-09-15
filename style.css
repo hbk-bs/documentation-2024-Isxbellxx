@@ -1,17 +1,280 @@
-* {
-  font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa,
-    Manjari, 'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri,
-    source-sans-pro, sans-serif;
-  font-weight: bold;
-}
 body {
+  background-color: rgb(236, 230, 221);
+  margin: 0;
+  padding: 4em 1em;
+  padding: 0;
+  font-family: 'Nimbus Mono PS', 'Courier New', monospace, sans-serif;
+  line-height: 1.5;
+  color: #555;
+}
+
+p {
+  max-width: 60ch; /* Begrenze die Textbreite auf ca. 60 Zeichen pro Zeile */
+  line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
+  text-align: left; /* Links ausgerichtet */
+  margin-bottom: 1.5em; /* Abstand zwischen Absätzen */
+  word-wrap: break-word; /* Langes Wortumbruch, wenn nötig */
+  
+ 
+}
+
+/* Header mit Hintergrundbild */
+header {
+  background-color: #f8f0e5;
+  background-image: url("header.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+/* Bilder auf volle Breite setzen */
+img {
+  width: 100%;
+}
+
+/* Link-Styling */
+a {
+  color: rgb(118, 39, 39);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Banner mit Logo links und Navigation rechts */
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: rgb(69, 57, 57);
+  padding: 10px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo img {
+  width: 100%; /* Stellt sicher, dass die Breite des Containers verwendet wird */
+  height: auto; /* Hält das Seitenverhältnis des Logos */
+  max-width: 200px; /* Optional: Setzt eine maximale Breite, damit das Logo nicht zu groß wird */
+}
+.navigation {
+  display: flex;
+  gap: 20px;
+}
+
+.navigation a {
+  color: rgb(58, 43, 43);
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.row,
+.column {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.squared-sixteen {
+  flex: 16 16 0;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+.row figure a img {
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
+
+.row figure a img:hover {
+  transform: scale(1.05); /* Vergrößerungseffekt beim Überfahren mit der Maus */
+}
+
+.locations {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.last-item {
+  margin-top: auto;
+}
+
+.facts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 50%;
+}
+
+footer {
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  width: 50vw;
-  height: 100vh;
+  padding-bottom: 4rem;
+}
+
+/* Banner mit Logo und Navigation */
+header.banner {
+  background-color: #f8f0e5; /* Heller Beige für den Header */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* Inhalt der Seite */
+.content {
+  padding: 20px;
+  background-color: #f8f0e5; /* Weißer Hintergrund für den Hauptinhalt */
+  text-align: center; /* Zentriert den Titel */
+}
+
+/* Hero-Bild unter dem Banner */
+.hero-image img {
+  width: 100%; /* Setzt das Bild auf volle Breite */
+  height: auto; /* Automatische Höhe, um das Bildverhältnis beizubehalten */
+  display: block;
+  margin: 0 auto; /* Zentriert das Bild horizontal */
+}
+
+/* Zentriere den Textcontainer in der Seite, aber behalte den Text linksbündig */
+.zentrierter-text-block {
+  max-width: 60ch; /* Begrenze die Breite des Textblocks */
+  margin-left: auto; /* Zentriert den Textblock horizontal */
+  margin-right: auto; /* Zentriert den Textblock horizontal */
+  text-align: left; /* Text bleibt linksbündig */
+  padding: 20px; /* Optional: fügt etwas Abstand zum Rand hinzu */
+}
+
+/* Überschriften-Stil */
+h1, h2 {
+  /* Überschriften zentriert */
+  margin-top: 1em;
+}
+
+
+/* Footer-Styling */
+.footer-note {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  background-color: #f8f0e5;
+  padding: 10px;
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 2rem;
 }
-h1 {
-  font-size: 5vw;
+
+
+
+@media (max-width: 768px) {
+  .squared-sixteen {
+    flex: 1 1 100%; /* Ein Bild pro Zeile bei kleinen Bildschirmen */
+  }
+}
+
+/* Responsives Design für Mobilgeräte */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navigation a {
+    margin-left: 0;
+  }
+}
+
+  @media (max-width: 768px) {
+    .logo img {
+      width: 150px; /* Setze eine kleinere Breite für Mobilgeräte */
+      height: auto;
+    }
+  }
+  
+  
+  
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 90vw;
+  }
+  .locations-container {
+    flex-direction: column;
+  }
+  .facts {
+    width: 100%;
+  }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+  .column{
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+  }
+ 
+  figure {
+    width: 100%;
+    align-items: center;
+  }
+ 
+  img {
+    width: 100%;
+  }
+
+  h1{
+    font-size: 2rem;
+
+  }
+
+  .impressum-bar{
+    padding: 1px 0;
+    font-size: 0.5rem;
+  }
 }
