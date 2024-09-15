@@ -1,5 +1,7 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ctJDMcM2)
-[![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=15401849)
-# DON'T FORGET THE README! Explain what I will find here. Link your projects!
+https://dokumentation-isabella-vk-2024.netlify.app
+ Heyy, mein Name ist Isabella, und ich befinde mich derzeit im Studium der Visuellen Kommunikation an der Hochschule für Bildende Künste (HBK) in Braunschweig. Auf dieser Webseite präsentiere ich die drei Projekte, die ich im zweiten Semester meines Studiums entwickelt habe. Viel Spaß!
 
-- DONT FORGET THE LICENSE!
+ die drei Projekte: 
+ - Colin und Lilous Abendteuer: https://colin-und-lilou-abendteuer.netlify.app/
+ - Was hat meine Efeutute?: https://efeutute.netlify.app
+ - Vom Wolf zum Mann: Eine Reise zur Erlösung: https://generated-ai-story.netlify.app
