@@ -14,6 +14,8 @@ p {
   text-align: left; /* Links ausgerichtet */
   margin-bottom: 1.5em; /* Abstand zwischen Absätzen */
   word-wrap: break-word; /* Langes Wortumbruch, wenn nötig */
+  
+ 
 }
 
 /* Header mit Hintergrundbild */
@@ -56,7 +58,9 @@ a:hover {
 }
 
 .logo img {
-  height: 40px;
+  width: 100%; /* Stellt sicher, dass die Breite des Containers verwendet wird */
+  height: auto; /* Hält das Seitenverhältnis des Logos */
+  max-width: 200px; /* Optional: Setzt eine maximale Breite, damit das Logo nicht zu groß wird */
 }
 .navigation {
   display: flex;
@@ -223,6 +227,16 @@ h1, h2 {
   }
 }
 
+  @media (max-width: 768px) {
+    .logo img {
+      width: 150px; /* Setze eine kleinere Breite für Mobilgeräte */
+      height: auto;
+    }
+  }
+  
+  
+  
+
 @media screen and (max-width: 768px) {
   main {
     width: 90vw;
@@ -255,7 +269,8 @@ h1, h2 {
   }
 
   h1{
-    font-size: 3rem;
+    font-size: 2rem;
+
   }
 
   .impressum-bar{

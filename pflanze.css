@@ -10,13 +10,19 @@ body {
 
 /* Hauptinhalt einrücken */
 main {
-    padding: 4em 5em; 
+    max-width: 60ch; /* Begrenze die Breite des Textblocks */
+    margin-left: auto; /* Automatisch zentriert */
+    margin-right: auto; /* Automatisch zentriert */
+    padding-left: 20px; /* Optional: füge etwas linken Abstand hinzu */
+    padding-right: 20px; /* Optional: füge etwas rechten Abstand hinzu */
+    text-align: left; /* Links ausgerichteter Text */
 }
 p {
     max-width: 60ch; /* Begrenze die Textbreite auf ca. 60 Zeichen pro Zeile */
     line-height: 1.6; /* Zeilenhöhe für bessere Lesbarkeit */
     margin-bottom: 1.5em; /* Abstand zwischen Absätzen */
     word-wrap: break-word; /* Langes Wortumbruch, wenn nötig */
+
     
 }
 
@@ -35,6 +41,7 @@ header {
 h2 {
     margin-top: 1em;
     padding-top: 1em;
+
 }
 
 
@@ -65,3 +72,35 @@ img {
     width: 100%;
     height: auto;
   }
+  @media screen and (max-width: 768px) {
+    main {
+      padding: 0 5vw; /* Verhindert, dass der Text am Rand klebt */
+    }
+
+    .locations-container {
+      flex-direction: column;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 2rem; /* Behalte eine konstante Größe oder passe sie an */
+    }
+
+    /* Verhindert, dass der Text abgeschnitten wird */
+    p {
+      max-width: 100%;  /* Verhindert Überlaufen des Textes */
+      word-wrap: break-word;  /* Lässt lange Wörter umbrechen */
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    /* Optional: kleinere Textgrößen für Mobilgeräte */
+    p, h2 {
+      font-size: 1rem; /* Passe die Größe des normalen Textes an, wenn nötig */
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+}
